@@ -1,9 +1,9 @@
 // import Todo from './components/Todo';
 import { Route, Switch } from 'react-router-dom';
-import AllMeetupsPage from './pages/AllMeetups';
-import NewMeetupsPage from './pages/NewMeetup';
 import Favorites from './pages/Favorites';
 import MainNavigation from './components/layout/MainNavigation';
+import NewAthletePage from './pages/NewAthlete';
+import AllAthletesPage from './pages/AllAthletes';
 // <div>
 //   <h1>
 //     <Todo text='Card 1' />
@@ -17,10 +17,10 @@ function App() {
       <MainNavigation />
       <Switch>
         <Route path='/' exact>
-          <AllMeetupsPage />
+          <AllAthletesPage />
         </Route>
-        <Route path='/new-meetup'>
-          <NewMeetupsPage />
+        <Route path='/new-athlete'>
+          <NewAthletePage />
         </Route>
         <Route path='/favorites'>
           <Favorites />
