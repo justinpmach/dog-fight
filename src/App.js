@@ -1,9 +1,11 @@
 // import Todo from './components/Todo';
 import { Route, Switch } from 'react-router-dom';
-import Favorites from './pages/Favorites';
-import MainNavigation from './components/layout/MainNavigation';
+import FavoritesPage from './pages/Favorites';
+// import MainNavigation from './components/layout/MainNavigation';
 import NewAthletePage from './pages/NewAthlete';
 import AllAthletesPage from './pages/AllAthletes';
+import Layout from './components/layout/Layout';
+
 // <div>
 //   <h1>
 //     <Todo text='Card 1' />
@@ -13,8 +15,7 @@ import AllAthletesPage from './pages/AllAthletes';
 // </div>
 function App() {
   return (
-    <div>
-      <MainNavigation />
+    <Layout>
       <Switch>
         <Route path='/' exact>
           <AllAthletesPage />
@@ -23,10 +24,10 @@ function App() {
           <NewAthletePage />
         </Route>
         <Route path='/favorites'>
-          <Favorites />
+          <FavoritesPage />
         </Route>
       </Switch>
-    </div>
+    </Layout>
   );
 }
 

@@ -1,4 +1,4 @@
-import AthleteList from '../components/layout/AthleteList';
+import AthleteList from '../components/athletes/AthleteList';
 
 const athletes = [
   {

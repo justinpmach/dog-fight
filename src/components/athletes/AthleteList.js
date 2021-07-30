@@ -2,7 +2,7 @@ import AthleteCard from './AthleteCard';
 
 function AthleteList(props) {
   return (
-    <div className='w-full grid grid-cols-2 gap-4'>
+    <div className='w-full grid grid-cols-2 mx-0'>
       {props.fighters.map((fighter) => (
         <AthleteCard
           key={fighter.id}
